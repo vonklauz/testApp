@@ -1,0 +1,18 @@
+@import '/src/assets/scss/header';
+@import '/src/assets/scss/main';
+@import '/src/assets/scss/filter/filter';
+@import '/src/assets/scss/map';
+@import '/src/assets/scss/estate/estate_card';
+
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Inter', sans-serif;
+  background: #F5F5F5;
+}
+
+main {
+  margin-top: $header-height + 16px;
+}

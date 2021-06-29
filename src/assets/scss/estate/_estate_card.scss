@@ -1,0 +1,110 @@
+.estate-card {
+    border-radius: 8px;
+    margin-bottom: 17px;
+
+    &:hover {
+        box-shadow: 0px 20px 80px rgba(63, 81, 181, 0.2), 0px -20px 80px rgba(63, 81, 181, 0.2);
+        background-color: transparent;
+    }
+
+    &__vertical {
+        width: 278px;
+        height: fit-content;
+
+        .estate-card__img {
+            height: 184px;
+        }
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        background: rgba(0, 0, 0, 0.3);
+
+        &__span {
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 4px 8px;
+            margin-right: 5px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        &__promote {
+            background-color: #519872;
+        }
+
+        &__best {
+            background-color: #EFA00B;
+        }
+    }
+
+    &__content {
+        background-color: #fff !important;
+        padding: 8px 16px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__info {
+        color: #1E2019;
+
+        &__price {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__deadline {
+            font-size: 12px;
+            line-height: 17px;
+            color: #7a7a7a;
+            margin-top: 4px;
+        }
+
+        &__name {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 6px;
+        }
+
+        &__address {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 6px;
+        }
+
+        &__flat {
+            font-size: 12px;
+            line-height: 17px;
+            margin-top: 10px;
+        }
+
+        &__num {
+            font-size: 12px;
+            line-height: 17px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__icon {
+            color: #3F51B5;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

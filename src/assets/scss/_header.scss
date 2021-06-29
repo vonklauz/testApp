@@ -1,0 +1,91 @@
+@import 'variables';
+
+.header {
+    background-color: #fff;
+    left: 24px;
+    right: 24px;
+    width: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: none;
+    position: fixed;
+
+    .selected {
+        color: $basicHover;
+    }
+
+    &__toggler {
+        &__btn {
+            color: $black;
+            text-transform: capitalize;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 46px;
+            position: relative;
+            transition: $transition;
+
+            &:hover {
+                background-color: inherit;
+                color: $basicHover;
+            }
+        }
+    }
+
+    &__content {
+        height: $header-height;
+        color: $black;
+
+        .link {
+            color: $black;
+            margin: 0 1rem;
+            font-size: 1rem;
+            line-height: 24px;
+            transition: $transition;
+
+            &:hover {
+                color: $basicHover;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__search {
+        margin-left: 39px;
+
+        button {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $black;
+            text-transform: capitalize;
+            transition: $transition;
+
+            &:hover {
+                background-color: inherit;
+                color: $basicHover;
+            }
+        }
+
+        &__icon {
+            color: $basicHover;
+        }
+    }
+
+    &__user {
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+
+        &__info {
+            margin: 0 1rem;
+
+            .user-login {
+                color: #1E2019;
+            }
+
+            .user-role {
+                color: $gray;
+            }
+        }
+    }
+}
